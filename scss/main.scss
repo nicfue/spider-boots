@@ -13,26 +13,35 @@
   background-position: center;
 }
 
-/*.bg-transparent {
-	background: transparent;
-	color: white;
-}*/
-
 .navbar {
 	background: transparent;
 	.nav-link {
 		color: white;
-	&:hover { 
+	&:hover {
 		background-color: rgba(223, 72, 89, 0.5);
 	}
 }
 }
 
-.display-1 {	
+.display-1 {
   	text-align:center;
   	width:100%;
   	color: #EFF0D1;
 
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon{
+  text-decoration: none;
+  color: white;
+  &:hover{
+    opacity: 0.5;
+  }
 }
 
 .staff {
@@ -46,7 +55,3 @@
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 	}
 }
-
-
-
-
