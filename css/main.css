@@ -56,4 +56,47 @@
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
 
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bgimg-1 {
+  min-height: 300px;
+  background-image: url(../pics/pinklady.jpg); }
+
+.bgimg-1fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady-fix.jpg); }
+
+.bgimg-2 {
+  min-height: 300px;
+  background-image: url(../pics/pinklady2.jpg); }
+
+.bgimg-2fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady2-fix.jpg); }
+
+.bgimg-3 {
+  min-height: 300px;
+  background-image: url(../pics/pinklady3.jpg); }
+
+.bgimg-3fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady3-fix.jpg); }
+
+.scrollToTop {
+  color: #e48e98;
+  position: fixed;
+  left: 45vw;
+  bottom: 0;
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

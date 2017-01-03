@@ -15,3 +15,28 @@ function initMap() {
   });
   marker.setMap(map);
 }
+
+//SMOOTH SCROLL
+$(document).on('click', '.nav-link', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 800);
+});
+
+//SCROLL TO TOP
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+        $('.scrollToTop').fadeIn();
+    } else {
+        $('.scrollToTop').fadeOut();
+    }
+});
+
+$('.scrollToTop').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 800);
+    return false;
+});
