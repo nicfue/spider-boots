@@ -23,10 +23,6 @@
   background-size: cover;
   background-position: center; }
 
-/*.bg-transparent {
-	background: transparent;
-	color: white;
-}*/
 .navbar {
   background: transparent; }
   .navbar .nav-link {
@@ -38,6 +34,17 @@
   text-align: center;
   width: 100%;
   color: #EFF0D1; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer-icon {
+  text-decoration: none;
+  color: white; }
+  .footer-icon:hover {
+    opacity: 0.5; }
 
 .staff {
   display: flex;
