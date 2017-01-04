@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
   </head>
   <body>
   <div class="jumbotron-fluid">
@@ -38,8 +39,10 @@
   </div>
 </nav>
 
-  <div class="text-xs-center display-1">
-    <h1>Spider Link</h1>
+  <div class="text-xs-center">
+    <h1 class="display-5 hidden-md-up">Spider Link</h1>
+    <h1 class="display-3 hidden-sm-down hidden-lg-up">Spider Link</h1>
+    <h1 class="display-1 hidden-md-down">Spider Link</h1>
   </div>
 </div>
 
@@ -52,10 +55,10 @@
 
 <!--- PARALLAX -->
 <div class="parallax bgimg-1 flex-center hidden-md-down">
-  <h1 class="text-white text-xs-center">Responsiv design, användarvänlighet och hög prestanda</h1>
+  <h1 class="text-xs-center text-white">Responsiv design, användarvänlighet och hög prestanda</h1>
 </div>
 <div class="bgimg-1fix flex-center hidden-lg-up">
-  <h4 class="text-white text-xs-center ml-1 mr-1">Responsiv design, användarvänlighet och hög prestanda</h4>
+  <h4 class="text-xs-center mx-1 text-white">Responsiv design, användarvänlighet och hög prestanda</h4>
 </div>
 
 <!-- TJÄNSTER -->
@@ -64,50 +67,56 @@
     <h4 class="text-xs-center">Tjänster</h4>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3">
       <div class="flex-center">
-      <i class="fa fa-mobile fa-2x pb-1" aria-hidden="true"></i>
+      <i class="fa fa-mobile fa-3x pb-1 hidden-sm-down" aria-hidden="true"></i>
+      <i class="fa fa-mobile fa-2x pb-1 hidden-md-up" aria-hidden="true"></i>
       </div>
       <h6 class="text-xs-center">Mobile</h6>
-      <p class="hidden-xs-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      <p class="hidden-sm-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
       book. </p>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3">
       <div class="flex-center">
-      <i class="fa fa-cloud fa-2x pb-1" aria-hidden="true"></i>
+      <i class="fa fa-cloud fa-3x pb-1 hidden-sm-down" aria-hidden="true"></i>
+      <i class="fa fa-cloud fa-2x pb-1 hidden-md-up" aria-hidden="true"></i>
       </div>
        <h6 class="text-xs-center">Webbhotell</h6>
-      <p class="hidden-xs-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      <p class="hidden-sm-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
       book. </p>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3">
       <div class="flex-center">
-      <i class="fa fa-code fa-2x pb-1" aria-hidden="true"></i>
+      <i class="fa fa-code fa-3x pb-1 hidden-sm-down" aria-hidden="true"></i>
+      <i class="fa fa-code fa-2x pb-1 hidden-md-up" aria-hidden="true"></i>
       </div>
       <h6 class="text-xs-center">Utveckling</h6>
-      <p class="hidden-xs-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      <p class="hidden-sm-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
       book. </p>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3">
       <div class="flex-center">
-      <i class="fa fa-line-chart fa-2x pb-1" aria-hidden="true"></i>
+      <i class="fa fa-line-chart fa-3x pb-1 hidden-sm-down" aria-hidden="true"></i>
+      <i class="fa fa-line-chart fa-2x pb-1 hidden-md-up" aria-hidden="true"></i>
       </div>
     <h6 class="text-xs-center">Analys</h6>
-      <p class="hidden-xs-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      <p class="hidden-sm-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
       book. </p>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3">
       <div class="flex-center">
-      <i class="fa fa-bold fa-2x pb-1" aria-hidden="true"></i>
+      <i class="fa fa-bold fa-3x pb-1 hidden-sm-down" aria-hidden="true"></i>
+      <i class="fa fa-bold fa-2x pb-1 hidden-md-up" aria-hidden="true"></i>
       </div>
     <h6 class="text-xs-center">Branding</h6>
-      <p class="hidden-xs-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      <p class="hidden-sm-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
       book. </p>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3">
       <div class="flex-center">
-      <i class="fa fa-chrome fa-2x pb-1" aria-hidden="true"></i>
+      <i class="fa fa-chrome fa-3x pb-1 hidden-sm-down" aria-hidden="true"></i>
+      <i class="fa fa-chrome fa-2x pb-1 hidden-md-up" aria-hidden="true"></i>
       </div>
     <h6 class="text-xs-center">SEO</h6>
-      <p class="hidden-xs-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      <p class="hidden-sm-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
       book. </p>
     </div>
     </article>
@@ -115,10 +124,10 @@
 
   <!--- PARALLAX -->
   <div class="parallax bgimg-2 flex-center hidden-md-down">
-    <h1 class="text-white text-xs-center">Strategi, planering och utveckling</h1>
+    <h1 class="text-xs-center text-white">Strategi, planering och utveckling</h1>
   </div>
   <div class="bgimg-2fix flex-center hidden-lg-up">
-      <h4 class="text-white text-xs-center ml-1 mr-1">Strategi, planering och utveckling</h4>
+      <h4 class="text-xs-center ml-1 mr-1 text-white">Strategi, planering och utveckling</h4>
   </div>
 
 <!-- OM OSS -->

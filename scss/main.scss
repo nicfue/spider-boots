@@ -1,11 +1,3 @@
-.h1 {font-size: 7vmin;}
-.h2 {font-size: 4vmin;}
-.h3 {font-size: 5.5vmin;}
-.h4 {font-size: 5vmin;}
-.h5 {font-size: 4.5vmin;}
-.h6 {font-size: 4vmin;}
-.p {font-size: 3vmin;}
-
 .jumbotron-fluid {
   width: 100%;
   height: 100vh;
@@ -20,16 +12,8 @@
 		color: white;
 	&:hover {
 		background-color: rgba(223, 72, 89, 0.5);
-	}
-}
-}
-
-.display-1 {
-  	text-align:center;
-  	width:100%;
-  	color: #EFF0D1;
-  	margin-top: 40%;
-
+	 }
+  }
 }
 
 .flex-center {
@@ -112,3 +96,10 @@
 .bgc-red {
 background-color: #df4859;
 }
+
+h4 {
+  line-height: 2rem;
+}
+
+
+
