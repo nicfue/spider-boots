@@ -101,5 +101,41 @@ h4 {
   line-height: 2rem;
 }
 
+.header-text{
+  position:absolute;
+  top: 55%;
+  text-align:center;
+  width:100%;
+}
+
+.footer-text{
+  font-size: 0.6rem;
+}
+
+.form-control {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #E28F9A;
+  padding: 12px 8px;
+  &:focus{
+    background-color: #EFEFD2;
+  }
+}
+
+.btn {
+  outline: none;
+  border: 2px solid #DC4A5C;
+  border-radius: 25px;
+  background-color: white;
+  width: 60%;
+  padding: 10px;
+  color: #4B4D54;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: #DC4A5C;
+    color: white;
+  }
+}
 
 
