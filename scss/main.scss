@@ -4,6 +4,7 @@
 .h4 {font-size: 5vmin;}
 .h5 {font-size: 4.5vmin;}
 .h6 {font-size: 4vmin;}
+.p {font-size: 3vmin;}
 
 .jumbotron-fluid {
   width: 100%;
@@ -27,6 +28,7 @@
   	text-align:center;
   	width:100%;
   	color: #EFF0D1;
+  	margin-top: 40%;
 
 }
 
@@ -105,4 +107,8 @@
   left:45vw;
 	bottom: 0;
 	display:none;
+}
+
+.bgc-red {
+background-color: #df4859;
 }
