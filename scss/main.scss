@@ -117,9 +117,21 @@ h4 {
   border: none;
   border-bottom: 2px solid #E28F9A;
   padding: 12px 8px;
+  border-radius: 0rem;
   &:focus{
-    background-color: #EFEFD2;
+    background-color: #F6F6F6;
+    border-color: #E28F9A;
   }
+}
+
+.form-control[type=text] {
+  text-indent: 0;
+}
+
+.form-control:focus::-webkit-input-placeholder{
+  transition: text-indent 1s 0.2s ease-in;
+  text-indent: -100%;
+  opacity: 1;
 }
 
 .btn {
@@ -137,5 +149,21 @@ h4 {
     color: white;
   }
 }
+
+.btn-secondary:hover {
+  border-color: #DC4A5C;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  outline: none !important;
+  background-color: #DC4A5C !important;
+  color: #ffffff !important;
+  border-color: #DC4A5C !important;
+}
+
+
+
+
+
 
 
