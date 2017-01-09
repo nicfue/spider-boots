@@ -40,3 +40,21 @@ $('.scrollToTop').click(function() {
     }, 800);
     return false;
 });
+
+$(document).ready(function(){
+var scroll_start = 0;
+var startchange = $('#startchange');
+var offset = startchange.offset();
+  if (startchange.length){
+    $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar").addClass("fixednav");
+          $(".brand-img").addClass("brand-img-fixed");
+      } else {
+          $(".navbar").removeClass("fixednav");
+          $(".brand-img").removeClass("brand-img-fixed");
+      }
+    });
+  }
+});
