@@ -72,8 +72,8 @@
 .scrollToTop {
   color: #e48e98;
   position: fixed;
-  left: 45vw;
-  bottom: 0;
+  left: 88vw;
+  bottom: 15vw;
   display: none; }
 
 .bgc-red {
@@ -99,17 +99,16 @@ h4 {
   border-radius: 0rem; }
   .form-control:focus {
     background-color: #F6F6F6;
-    border-color: #E28F9A; }
+    border-color: #E28F9A;
+    border-radius: 0 15px 0 0; }
+  .form-control:focus::-webkit-input-placeholder {
+    transition: text-indent 1s 0.2s ease-in;
+    text-indent: -100%;
+    opacity: 1; }
+  .form-control [type=text] {
+    text-indent: 0; }
 
-.form-control[type=text] {
-  text-indent: 0; }
-
-.form-control:focus::-webkit-input-placeholder {
-  transition: text-indent 1s 0.2s ease-in;
-  text-indent: -100%;
-  opacity: 1; }
-
-.btn {
+.btn, .btn-secondary {
   outline: none;
   border: 2px solid #DC4A5C;
   border-radius: 25px;
@@ -119,17 +118,14 @@ h4 {
   color: #4B4D54;
   transition: background-color 0.5s;
   cursor: pointer; }
-  .btn:hover {
+  .btn:hover, .btn-secondary:hover {
     background-color: #DC4A5C;
-    color: white; }
-
-.btn-secondary:hover {
-  border-color: #DC4A5C; }
-
-.btn-secondary.focus, .btn-secondary:focus {
-  outline: none !important;
-  background-color: #DC4A5C !important;
-  color: #ffffff !important;
-  border-color: #DC4A5C !important; }
+    color: white;
+    border-color: #DC4A5C; }
+  .btn:focus, .btn-secondary:focus {
+    outline: none !important;
+    background-color: #DC4A5C !important;
+    color: #ffffff !important;
+    border-color: #DC4A5C !important; }
 
 /*# sourceMappingURL=main.css.map */
