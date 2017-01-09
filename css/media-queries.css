@@ -8,7 +8,10 @@
   	height: 159px;
   }*/
   .btn {
-    width: 60%; } }
+    width: 60%; }
+
+  .navbar {
+    position: static; } }
 @media screen and (max-width: 768px) {
   li {
     font-size: 0.9em; }
@@ -64,7 +67,13 @@
     margin: auto; }
 
   .btn {
-    width: 20%; } }
+    width: 20%; }
+
+  .mini-spider {
+    display: none; }
+
+  .navbar {
+    position: fixed; } }
 @media only screen and (min-width: 992px) {
   h1 {
     font-size: 3em; }
@@ -98,6 +107,12 @@
     margin: auto; }
 
   .btn {
-    width: 20%; } }
+    width: 20%; }
+
+  .mini-spider {
+    display: none; }
+
+  .navbar {
+    position: fixed; } }
 
 /*# sourceMappingURL=media-queries.css.map */

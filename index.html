@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="css/media-queries.css">
   </head>
   <body>
-  <div class="jumbotron-fluid">
-  <nav class="navbar">
+  <div class="jumbotron-fluid" id="home">
+  <nav class="navbar" id="navbar">
   <button class="navbar-toggler hidden-sm-up text-white float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
     ☰
   </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand" href="#"> <img src="pics/spider-logo2.png"></a>
-    <ul class="nav navbar-nav float-sm-right">
+    <a class="navbar-brand brand-img-fixed" href="#"> <img class="brand-img hidden-sm-down" src="pics/spider-logo2.png"></a>
+    <ul class="nav navbar-nav float-sm-right" id="menu">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Hem <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home">Hem <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#work">Uppdrag</a>
@@ -40,11 +40,13 @@
 </nav>
     <section class="container header-text">
        <article class="row">
-       <div class="text-xs-center text-white">
-        <div class="display-4 mb-2 font-bold">Spider Link</div>
-        <h2 class="font-bold">Vi utvecklar våra kunder digitalt!</h2>
+          <div class="text-xs-center text-white">
+          <img src="pics/spider-logo2.png" class="hidden-sm-up" style="transform: scale(0.6)">
+          <div class="display-4 mb-2 font-bold">Spider Link</div>
+          <h2 class="font-bold">Vi utvecklar våra kunder digitalt!</h2>
         </article>
-    </section> 
+        <a href="" id="startchange"></a>
+    </section>
 </div>
 
 <!-- INTRO -->
@@ -71,7 +73,7 @@
       <p class="mb-3">Vi försöker alltid ligga steget före med nya, innovativa och spännande idéer och använder oss av den senaste tekniken inom webbutveckling.</p>
     </div>
       <hr width="90%" size="1" align="center" noshade class="mb-2">
-    <div class="col-xs-12 pt-2 text-xs-center pb-3">
+    <div class="col-xs-12 pt-2 text-xs-center pb-3" id="work">
         <h2 class="font-bold">Uppdrag</h2>
         <p class="wrapper-p py-1">Vi är tacksamma att kunna få arbeta ihop med några av de största varumärkena i Sveriges som IKEA, Volvo och H&M samtidigt som vi har små lokala företag som uppdragsgivare. Så ta en titt på våra case och hör av dig när du vill se mer!</p>
         </div>
@@ -81,7 +83,6 @@
 <!-- UPPDRAG -->
 <section class="container-fluid" id="work">
   <article class="row">
-
   </article>
 </section>
 
@@ -164,7 +165,7 @@
   </div>
 
 <!-- OM OSS -->
-  <section class="container pt-3">
+  <section class="container pt-3" id="about">
     <article class="row">
     <div class="col-xs-12 pt-2 text-xs-center pb-3">
         <h2 class="font-bold">Vi på Spider Link</h2>
@@ -208,25 +209,25 @@
     <article class="row">
       <form>
       <div class="form-group col-sm-6 pb-1">
-        <input class="form-control" placeholder="Namn" type="text">
+        <input class="form-control" placeholder="Namn" type="text" required="true">
       </div>
       <div class="form-group col-sm-6 pb-1">
-        <input class="form-control" placeholder="Telefon" type="text">
+        <input class="form-control" placeholder="Telefon" type="text" required="true">
       </div>
   <div class="form-group col-sm-6 pb-1">
-    <input class="form-control" placeholder="E-post" type="text"> 
+    <input class="form-control" placeholder="E-post" type="text" required="true"> 
   </div>
   <div class="form-group col-sm-6 pb-1">
-    <input class="form-control" placeholder="Företag/organisation" type="text">
+    <input class="form-control" placeholder="Företag/organisation" type="text" required="true">
   </div>
   <div class="form-group col-sm-12 pb-1">
-    <input class="form-control" placeholder="Skriv ett meddelande..." type="text">
+    <input class="form-control" placeholder="Skriv ett meddelande..." type="text" required="true">
+  </div>
+  <div class="form-group col-sm-12 pb-1 flex-center">
+    <button type="submit" class="btn btn-secondary rounded text-center">Skicka</button>
   </div>
   </form>
 </article>
-<div class="flex-center">
-<button type="button" class="btn btn-secondary rounded text-center">Skicka</button>
-</div>
 </section>
 
 <!-- KARTA -->
@@ -242,7 +243,7 @@
 <!-- FOOTER -->
    <footer class="bgc-black text-white container-fluid text-xs-center">
      <section class="container pt-3">
-     <img class="mb-3" src="pics/spider-logo2.png" height="75" width="55">
+     <img class="mb-3 mini-spider" src="pics/spider-logo2.png" height="75" width="55">
      <article class="row">
      <div class="col-md-4 mb-3">
      <ul class="list-unstyled">

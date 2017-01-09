@@ -11,6 +11,9 @@
 	.btn {
 		width: 60%;
 	}
+	.navbar {
+		position: static;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -70,6 +73,12 @@
 	.btn {
 		width: 20%;
 	}
+	.mini-spider {
+		display: none;
+	}
+	.navbar {
+		position: fixed;
+	}
 }
 
 
@@ -106,5 +115,11 @@
 	}
 	.btn {
 		width: 20%;
+	}
+	.mini-spider {
+		display: none;
+	}
+	.navbar {
+		position: fixed;
 	}
 }
