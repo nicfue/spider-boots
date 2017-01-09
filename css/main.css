@@ -84,12 +84,15 @@ h4 {
 
 .header-text {
   position: absolute;
-  top: 55%;
-  text-align: center;
+  top: 35%;
+  margin: auto;
   width: 100%; }
 
 .footer-text {
   font-size: 0.6rem; }
+
+.bgc-black {
+  background-color: black; }
 
 .form-control {
   outline: none;
@@ -127,5 +130,26 @@ h4 {
     background-color: #DC4A5C !important;
     color: #ffffff !important;
     border-color: #DC4A5C !important; }
+
+.font-bold {
+  font-weight: bold; }
+
+.about-border-box:nth-child(3n+2) .service-icon:hover {
+  border: 10px solid #DF4859; }
+
+.about-border-box:nth-child(3n+3) .service-icon:hover {
+  border: 10px solid #E48E98; }
+
+.about-border-box:nth-child(3n+1) .service-icon:hover {
+  border: 10px solid #EFF0D1; }
+
+.service-icon {
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
