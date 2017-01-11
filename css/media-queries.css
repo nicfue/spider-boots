@@ -11,7 +11,16 @@
     width: 60%; }
 
   .navbar {
-    position: static; } }
+    position: static; }
+
+  .slicknav_menu {
+    display: block; }
+
+  #menu {
+    display: none; }
+
+  .spiderheader {
+    display: none; } }
 @media screen and (max-width: 768px) {
   li {
     font-size: 0.9em; }
@@ -73,7 +82,13 @@
     display: none; }
 
   .navbar {
-    position: fixed; } }
+    position: fixed; }
+
+  .slicknav_menu {
+    display: none; }
+
+  #menu {
+    display: block; } }
 @media only screen and (min-width: 992px) {
   h1 {
     font-size: 3em; }
@@ -113,6 +128,12 @@
     display: none; }
 
   .navbar {
-    position: fixed; } }
+    position: fixed; }
+
+  .slicknav_menu {
+    display: none; }
+
+  #menu {
+    display: block; } }
 
 /*# sourceMappingURL=media-queries.css.map */

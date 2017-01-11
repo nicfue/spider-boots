@@ -41,6 +41,7 @@ $('.scrollToTop').click(function() {
     return false;
 });
 
+//--
 $(document).ready(function(){
 var scroll_start = 0;
 var startchange = $('#startchange');
@@ -57,4 +58,19 @@ var offset = startchange.offset();
       }
     });
   }
+});
+
+//--
+$(document).ready(function(){
+  $('#menu').slicknav({
+    label: '',
+    duration: 200,
+    brand: 'Spider Link',
+  });
+});
+
+$(document).ready(function(){
+  $('.slicknav_icon').click(function(){
+    $(this).toggleClass('open');
+  });
 });
