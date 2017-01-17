@@ -14,6 +14,15 @@
 	.navbar {
 		position: static;
 	}
+	.slicknav_menu {
+		display: block;
+	}
+	#menu {
+  	display: none;
+	}
+	.spiderheader {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -79,6 +88,12 @@
 	.navbar {
 		position: fixed;
 	}
+	.slicknav_menu {
+		display: none;
+	}
+	#menu {
+  	display: block;
+	}
 }
 
 
@@ -106,7 +121,7 @@
 
 	.wrapper-p {
 		width: 70%;
-		margin: auto;		
+		margin: auto;
 	}
 
 	#contact {
@@ -121,5 +136,11 @@
 	}
 	.navbar {
 		position: fixed;
+	}
+	.slicknav_menu {
+		display: none;
+	}
+		#menu {
+  	display: block;
 	}
 }
