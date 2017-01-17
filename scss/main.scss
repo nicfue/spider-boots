@@ -13,11 +13,10 @@ body {
 .navbar {
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   background: transparent;
+  padding-right: 25px !important;
   border-radius: 0;
-  height: 4rem;
-  transition: background 0.5s linear;
     .nav-link {
     	color: white;
     &:hover {
@@ -27,11 +26,33 @@ body {
   }
 }
 
+nav a {
+  font-size: 24px;
+  padding: 12px 6px 12px 6px;
+  -webkit-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+}
+
+.nav-item .active {
+  color: rgba(223, 72, 89, 0.5);
+}
+
 .navbar-toggler {
   &:focus {
     outline: none;
   }
 }
+
+nav.navbar.shrink {
+  padding: 5px;
+  transition: all 0.5s linear;
+}
+
+
+nav.shrink a {
+  font-size: 18px;
+}
+
 
 .nav {
   padding-top: 0.3rem;
@@ -43,18 +64,11 @@ body {
 }
 
 .brand-img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  transition-duration: 0.5s;
+  width: 115%;
+  transition: all 0.5s ease;
 }
 
-.brand-img-fixed {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  transition-duration: 0.5s;
-  top: -10%;
-  left: 0%;
-}
+
 
 .navbar-brand {
   position: absolute;
@@ -231,39 +245,10 @@ h4 {
 body {
   overflow-x: hidden;
 }
-.slicknav_menu {
-  background-color: #000000!important;
-}
-
-.slicknav_btn {
-  background-color: #000000!important;
-}
-
-.slicknav_nav {
-}
-
-.slicknav_nav a:hover {
-  background: black!important;
-  color: #DF4859!important;
-}
 
 .nav-link:focus {
   text-decoration: none;
   outline: none;
-}
-
-.slicknav_icon {
-  position: relative;
-  margin: 50px auto;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
 }
 
 .slicknav_icon span, {
@@ -316,4 +301,14 @@ body {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.intro-section-hidden {
+  display: none;
+}
+
+.intro-brand {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }

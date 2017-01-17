@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="slicknav/css/slicknav.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" href="slicknav/css/slicknav.css">
   </head>
-  <body>
-  <div class="jumbotron-fluid" id="home">
+  <body id="myPage" data-spy="scroll" data-target="#menu" data-offset="0">
+  <div class="jumbotron-fluid intro-section" id="home">
   <nav class="navbar" id="navbar">
-  <button class="navbar-toggler hidden-sm-up text-white float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+  <button class="navbar-toggler hidden-xs-up text-white float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
   </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand brand-img-fixed" href="#"> <img class="brand-img hidden-sm-down" src="pics/spider-logo2.png"></a>
+    <a class="navbar-brand" href="#"> <img class="brand-img" src="pics/spider-logo2.png"></a>
     <ul class="nav navbar-nav float-sm-right" id="menu">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Hem <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link hidden-sm-down active" href="#home">Hem <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#work">Uppdrag</a>
@@ -42,13 +42,13 @@
     <section class="container header-text">
        <article class="row">
           <div class="text-xs-center text-white">
-          <img src="pics/spider-logo2.png" class="hidden-sm-up" style="transform: scale(0.6)">
-          <div class="display-4 mb-2 font-bold spiderheader">Spider Link</div>
+          <div class="display-4 mb-2 font-bold">Spider Link</div>
           <h2 class="font-bold">Vi utvecklar våra kunder digitalt!</h2>
         </article>
         <a href="" id="startchange"></a>
     </section>
 </div>
+<img class="intro-brand hidden-sm-up" src="pics/spider-logo2.png">
 
 <!-- INTRO -->
  <section class="container wrapper">
@@ -79,7 +79,7 @@
         <p class="wrapper-p py-1">Vi är tacksamma att kunna få arbeta ihop med några av de största varumärkena i Sveriges som IKEA, Volvo och H&M samtidigt som vi har små lokala företag som uppdragsgivare. Så ta en titt på våra case och hör av dig när du vill se mer!</p>
         </div>
     </article>
-  </section>    
+  </section>
 
 <!-- UPPDRAG -->
 <section class="container-fluid" id="work">
@@ -216,7 +216,7 @@
         <input class="form-control" placeholder="Telefon" type="text" required="true" autocomplete="off">
       </div>
   <div class="form-group col-sm-6 pb-1">
-    <input class="form-control" placeholder="E-post" type="text" required="true" autocomplete="off"> 
+    <input class="form-control" placeholder="E-post" type="text" required="true" autocomplete="off">
   </div>
   <div class="form-group col-sm-6 pb-1">
     <input class="form-control" placeholder="Företag/organisation" type="text" required="true" autocomplete="off">
