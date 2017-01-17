@@ -19,8 +19,8 @@
   #menu {
     display: none; }
 
-  .spiderheader {
-    display: none; } }
+  .brand-img-fixed {
+    top: 0%; } }
 @media screen and (max-width: 768px) {
   li {
     font-size: 0.9em; }
