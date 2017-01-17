@@ -73,3 +73,13 @@ $(document).ready(function(){
     $('.intro-section').toggleClass('intro-section-hidden');
   });
 });
+
+$(window).scroll(function() {
+if ($(document).scrollTop() > 50) {
+$('nav').addClass('shrink');
+$('.brand-img').css('width', '90%');
+} else {
+$('nav').removeClass('shrink');
+$('.brand-img').css('width', '115%');
+}
+});
