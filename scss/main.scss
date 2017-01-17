@@ -144,11 +144,25 @@ nav.shrink a {
 }
 
 .scrollToTop{
-	color: #e48e98;
-	position: fixed;
-  left: 88vw;
-	bottom: 15vw;
-	display:none;
+  display: none;
+  position:fixed;
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  background-color: #38383b;
+  bottom: 0;
+  right: 0;
+    i{
+    color: white;
+    font-size: 24px;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+  }
+    &:hover{
+    opacity: 0.8;
+    transition: all .3s ease;
+    }
 }
 
 .bgc-red {
