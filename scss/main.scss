@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .jumbotron-fluid {
   width: 100vw;
   height: 100vh;
@@ -108,39 +109,39 @@ nav.shrink a {
 }
 
 .bgimg-1 {
-    min-height: 300px;
-    background-image: url(../pics/pinklady.jpg);
+    min-height: 320px;
+    background-image: url(../pics/blackspider.jpg);
 }
 
 .bgimg-1fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady-fix.jpg);
+  background-image: url(../pics/blackspider-fix.jpg);
 }
 
 .bgimg-2 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady2.jpg)
+  min-height: 320px;
+  background-image: url(../pics/blackspider2.jpg)
 }
 
 .bgimg-2fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady2-fix.jpg);
+  background-image: url(../pics/blackspider2-fix.jpg);
 }
 
 .bgimg-3 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady3.jpg)
+  min-height: 320px;
+  background-image: url(../pics/blackspider3.jpg)
 }
 
 .bgimg-3fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady3-fix.jpg);
+  background-image: url(../pics/blackspider3-fix.jpg);
 }
 
 .scrollToTop{
@@ -155,9 +156,13 @@ nav.shrink a {
 background-color: #df4859;
 }
 
-h4 {
-  line-height: 2rem;
+a {text-decoration: none; color: white;}
+
+h1, h2, h3, h5, h6 {
+  font-weight: bold;
+  line-height: 1.3em;
 }
+
 
 .header-text{
   position:absolute;
@@ -165,6 +170,8 @@ h4 {
   margin: auto;
   width:100%;
 }
+
+.display-4{font-size: 3rem;}
 
 .footer-text{
   font-size: 0.6rem;
@@ -218,32 +225,23 @@ h4 {
   }
 }
 
-.font-bold {
-  font-weight: bold;
-}
-
 .about-border-box:nth-child(3n+2) .service-icon:hover {
- border: 10px solid #DF4859;
+ border: 5px solid #DF4859;
 }
 .about-border-box:nth-child(3n+3) .service-icon:hover{
-  border: 10px solid #E48E98;
+  border: 5px solid #E48E98;
 }
 .about-border-box:nth-child(3n+1) .service-icon:hover {
-  border: 10px solid #EFF0D1;
+  border: 5px solid #EFF0D1;
 }
 
 .service-icon {
-  height: 190px;
-  width: 190px;
-  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border-radius: 30%;
   border: 10px solid #ececec;
   position: relative;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 .nav-link:focus {
@@ -312,3 +310,4 @@ body {
   top: 5px;
   left: 5px;
 }
+

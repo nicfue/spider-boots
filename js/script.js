@@ -41,7 +41,7 @@ $('.scrollToTop').click(function() {
     return false;
 });
 
-//BRAND PIC MINIMIZE ON SCROLL
+//--
 $(document).ready(function(){
 var scroll_start = 0;
 var startchange = $('#startchange');
@@ -60,26 +60,17 @@ var offset = startchange.offset();
   }
 });
 
-//MOBILEMENU
+//--
 $(document).ready(function(){
   $('#menu').slicknav({
     label: '',
-    duration: 0
-  });
-});
-$(document).ready(function(){
-  $('.slicknav_icon').click(function(){
-    $(this).toggleClass('open');
-    $('.intro-section').toggleClass('intro-section-hidden');
+    duration: 200,
+    brand: 'Spider Link',
   });
 });
 
-$(window).scroll(function() {
-if ($(document).scrollTop() > 50) {
-$('nav').addClass('shrink');
-$('.brand-img').css('width', '90%');
-} else {
-$('nav').removeClass('shrink');
-$('.brand-img').css('width', '115%');
-}
+$(document).ready(function(){
+  $('.slicknav_icon').click(function(){
+    $(this).toggleClass('open');
+  });
 });
