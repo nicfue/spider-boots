@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="slicknav/css/slicknav.css">
+    <link rel="stylesheet" href="css/animations.css">       
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
   </head>
@@ -19,7 +20,7 @@
   <button class="navbar-toggler hidden-xs-up text-white float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
   </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand" href="#"> <img class="brand-img" src="pics/spider-logo2.png"></a>
+    <a class="navbar-brand" href="#"> <img class="brand-img" src="pics/spider-logo2.png" id="logo"></a>
     <ul class="nav navbar-nav float-sm-right" id="menu">
       <li class="nav-item">
         <a class="nav-link hidden-sm-down active" href="#home">Hem <span class="sr-only">(current)</span></a>
@@ -42,9 +43,9 @@
     <section class="container header-text">
        <article class="row">
           <div class="text-xs-center text-white">
-          <div class="display-4 mb-2 font-weight-bold">Spider Link
+          <div class="display-4 mb-2 font-weight-bold fadeIn">Spider Link
           </div>
-          <h2 class="mx-1">Vi utvecklar våra kunder digitalt!</h2>
+          <h2 class="mx-1 expandOpen">Vi utvecklar våra kunder digitalt!</h2>
           </div>
         </article>
         <a href="" id="startchange"></a>
@@ -178,25 +179,25 @@
         <img src="pics/linje.svg">
         <p class="wrapper-p mt-2">Vår kunskap, erfarenhet och kompetenta partners gör att inget uppdrag är för litet, för stort, för lätt eller svårt för oss.</p>
     </div>
-    <div class="col-md-4 staff about-border-box mt-3">
-      <img class="service-icon mb-1" src="pics/matte.jpg" alt="Matte">
+    <div class="col-md-4 staff about-border-box mt-3 slideUp">
+      <img class="service-icon mb-1" src="pics/matte.jpg" alt="Matte" id="photo1">
       <h3>Spindelbarnet</h3>
       <h5>Gillar JS</h5>
       <p>spindel1@spiderlink.se</p>
     </div>
-    <div class="col-md-4 staff about-border-box mt-3">
-      <img class="service-icon mb-1" src="pics/andreas.jpg" alt="Matte">
+    <div class="col-md-4 staff about-border-box mt-3 slideUp">
+      <img class="service-icon mb-1" src="pics/andreas.jpg" alt="Matte" id="photo2">
       <h3>Spindelbarnet</h3>
       <h5>Gillar JS</h5>
       <p>spindel1@spiderlink.se</p>
     </div>
-    <div class="col-md-4 staff about-border-box mt-3">
-      <img class="service-icon mb-1" src="pics/Nicolas.jpg" alt="Matte">
+    <div class="col-md-4 staff about-border-box mt-3 slideUp">
+      <img class="service-icon mb-1" src="pics/Nicolas.jpg" alt="Matte" id="photo3">
       <h3>Spindelbarnet</h3>
       <h5>Gillar JS</h5>
       <p>spindel1@spiderlink.se</p>
     </div>
-    </article>
+   </article>  
 </section>
 
 <!--- PARALLAX -->
@@ -299,6 +300,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnVwihuAauJVhTupIfX0uIPN33WNhYvOE&callback=initMap"></script>
     <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="slicknav/js/jquery.slicknav.min.js"></script>
-  </body>
+
+
+</body>
 </html>

@@ -1,6 +1,6 @@
 // jshint esversion:6
 // CONTACT MAP
-function initMap() {
+  function initMap() {
   let mapCanvas = document.getElementById("map");
   let cord = new google.maps.LatLng(33.1791817, -81.0961495);
   let mapOptions = {
@@ -41,7 +41,7 @@ $('.scrollToTop').click(function() {
     return false;
 });
 
-//--
+//BRAND PIC MINIMIZE ON SCROLL
 $(document).ready(function(){
 var scroll_start = 0;
 var startchange = $('#startchange');
@@ -60,17 +60,76 @@ var offset = startchange.offset();
   }
 });
 
-//--
+
+//MOBILEMENU
 $(document).ready(function(){
   $('#menu').slicknav({
     label: '',
-    duration: 200,
-    brand: 'Spider Link',
+    duration: 0
   });
 });
-
 $(document).ready(function(){
   $('.slicknav_icon').click(function(){
     $(this).toggleClass('open');
+    $('.intro-section').toggleClass('intro-section-hidden');
   });
 });
+
+$(window).scroll(function() {
+if ($(document).scrollTop() > 50) {
+$('nav').addClass('shrink');
+$('.brand-img').css('width', '90%');
+} else {
+$('nav').removeClass('shrink');
+$('.brand-img').css('width', '115%');
+}
+});
+
+
+
+
+$(window).scroll(function() {
+    $('#photo1').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
+
+
+$(window).scroll(function() {
+    $('#photo2').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
+
+
+$(window).scroll(function() {
+    $('#photo3').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
+
+
+$('#logo').click(function() {
+    $(this).addClass("hatch");
+  });
+
+
+
+
+
+
