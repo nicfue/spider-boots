@@ -1,13 +1,7 @@
 @media only screen and (min-width: 375px) {
-	.wrapper {
-		width: 90%;
-		margin: auto;
-	}
 
-	/*.rounded-circle {
-		width: 159px;
-		height: 159px;
-	}*/
+	.display-4{font-size: 4rem;}
+
 	.btn {
 		width: 60%;
 	}
@@ -20,23 +14,25 @@
 	#menu {
   	display: none;
 	}
-	.spiderheader {
-		display: none;
+	.brand-img-fixed {
+		top: 0%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	li{font-size: 0.9em;
+	li{font-size: 1em;
 	}
-    h1{font-size: 1.6em;
+    h1{font-size: 1.8em;
     }
-    h2{font-size: 1.4em;
+    h2{font-size: 1.6em;
 	}
-	h3{font-size: 1.3em;
+	h3{font-size: 1.2em;
 	}
-	h4{font-size: 1.1em;
+	h4{font-size: 1em;
 	}
-	h5{font-size: 1em;
+	h5{font-size: 1.1em;
+	}
+	h6{font-size: 1.4em;
 	}
 }
 
@@ -44,22 +40,24 @@
 @media only screen and (min-width: 768px) {
 	h1{font-size: 2.8em;
     }
-    h2{ font-size: 2em;
+    h2{ font-size: 1.9em;
 	}
-    h3{ font-size: 1.3em;
+    h3{font-size: 1.2em;
+    }
+    h4{font-size: 1.2em;
 	}
+	h5{font-size: 1.2em;
+	}	
+    h6{font-size: 1.8em;
+    }
 
-	.display-4{font-size: 5.5rem;}
+	.display-4{font-size: 4.5rem;}
 
-	.wrapper {
-		width: 90%;
-		margin: auto;
+	
+
+	.text-left{
+		text-align: left !important; 
 	}
-
-	/*.rounded-circle {
-		width: 119px;
-		height: 119px;
-	}*/
 	
 	.wrapper-p {
 		width: 70%;
@@ -102,24 +100,16 @@
     }
     h2{font-size: 2.1em;
 	}
-	h3{ font-size: 1.5em;
+	h3{ font-size: 1.4em;
 	}
 	h4{ font-size: 1.2em;
 	}
 
+	h6{font-size: 2em;}
+
 	.display-4{font-size: 6rem;}
 
-   	/*.rounded-circle {
-		width: 170px;
-		height: 170px;
-	}*/
-	
-	.wrapper {
-		width: 70%;
-		margin: auto;
-	}
-
-	.wrapper-p {
+  	.wrapper-p {
 		width: 70%;
 		margin: auto;
 	}
