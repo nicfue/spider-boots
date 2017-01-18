@@ -18,7 +18,7 @@
   <button class="navbar-toggler hidden-xs-up text-white float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
   </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand brand-img-fixed" href="#"> <img class="brand-img" src="pics/spider-logo2.png"></a>
+    <a class="navbar-brand" href="#"> <img class="brand-img" src="pics/spider-logo2.png" id="logo"></a>
     <ul class="nav navbar-nav float-sm-right" id="menu">
       <li class="nav-item active">
         <a class="nav-link hidden-sm-down" href="#home">Hem <span class="sr-only">(current)</span></a>
@@ -41,8 +41,10 @@
     <section class="container header-text">
        <article class="row">
           <div class="text-xs-center text-white">
-          <div class="display-4 mb-2 font-bold">Spider Link</div>
-          <h2 class="font-bold">Vi utvecklar våra kunder digitalt!</h2>
+          <div class="display-4 mb-2 font-weight-bold fadeIn">Spider Link
+          </div>
+          <h2 class="mx-1 expandOpen">Vi utvecklar våra kunder digitalt!</h2>
+          </div>
         </article>
         <a href="" id="startchange"></a>
     </section>
@@ -171,28 +173,25 @@
         <h2 class="font-bold">Vi på Spider Link</h2>
         <p class="wrapper-p py-1">Vår kunskap, erfarenhet och kompetenta partners gör att inget uppdrag är för litet, för stort, för lätt eller svårt för oss.</p>
     </div>
-    <div class="col-md-4 pb-3 staff about-border-box">
-      <img class="service-icon mb-1" src="pics/matte.jpg" alt="Matte">
-      <h4 class="font-bold">Spindelbarnet</h4>
-      <img src="pics/linje.svg" class="m-1">
-      <h4>Gillar JS</h4>
+    <div class="col-md-4 staff about-border-box mt-3 slideUp">
+      <img class="service-icon mb-1" src="pics/matte.jpg" alt="Matte" id="photo1">
+      <h3>Spindelbarnet</h3>
+      <h5>Gillar JS</h5>
       <p>spindel1@spiderlink.se</p>
     </div>
-    <div class="col-md-4 pb-3 staff about-border-box">
-      <img class="service-icon mb-1" src="pics/andreas.jpg" alt="Matte">
-      <h4 class="font-bold">Spindelbarnet</h4>
-      <img src="pics/linje.svg" class="m-1">
-      <h4>Gillar JS</h4>
+    <div class="col-md-4 staff about-border-box mt-3 slideUp">
+      <img class="service-icon mb-1" src="pics/andreas.jpg" alt="Matte" id="photo2">
+      <h3>Spindelbarnet</h3>
+      <h5>Gillar JS</h5>
       <p>spindel1@spiderlink.se</p>
     </div>
-    <div class="col-md-4 pb-3 staff about-border-box">
-      <img class="service-icon mb-1" src="pics/Nicolas.jpg" alt="Matte">
-      <h4 class="font-bold">Spindelbarnet</h4>
-      <img src="pics/linje.svg" class="m-1">
-      <h4>Gillar JS</h4>
+    <div class="col-md-4 staff about-border-box mt-3 slideUp">
+      <img class="service-icon mb-1" src="pics/Nicolas.jpg" alt="Matte" id="photo3">
+      <h3>Spindelbarnet</h3>
+      <h5>Gillar JS</h5>
       <p>spindel1@spiderlink.se</p>
     </div>
-    </article>
+   </article>  
 </section>
 
 <!--- PARALLAX -->
@@ -292,6 +291,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnVwihuAauJVhTupIfX0uIPN33WNhYvOE&callback=initMap"></script>
     <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="slicknav/js/jquery.slicknav.min.js"></script>
-  </body>
+
+
+</body>
 </html>
