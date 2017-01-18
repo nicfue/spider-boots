@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-size: 0.9rem;
 }
 
 
@@ -21,7 +22,7 @@ body {
     .nav-link {
     	color: white;
     &:hover {
-      color: rgba(223, 72, 89, 0.5);
+      color: rgb(223, 72, 89);
       transition: color 0.2s linear;
     }
   }
@@ -35,7 +36,7 @@ nav a {
 }
 
 .nav-item .active {
-  color: rgba(223, 72, 89, 0.5);
+  color: rgb(223, 72, 89);
 }
 
 .navbar-toggler {
@@ -170,9 +171,13 @@ nav.shrink a {
 background-color: #df4859;
 }
 
+p{
+  font-weight: 600;
+}
+
 a {text-decoration: none; color: white;}
 
-h1, h2, h3, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: 1.3em;
 }
@@ -324,4 +329,3 @@ h1, h2, h3, h5, h6 {
   top: 5px;
   left: 5px;
 }
-
