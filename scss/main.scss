@@ -1,5 +1,9 @@
+@import 'animations';
+
+
 body {
   overflow-x: hidden;
+  font-size: 0.9rem;
 }
 
 
@@ -156,9 +160,13 @@ nav.shrink a {
 background-color: #df4859;
 }
 
+p{
+  font-weight: 600;
+}
+
 a {text-decoration: none; color: white;}
 
-h1, h2, h3, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: 1.3em;
 }

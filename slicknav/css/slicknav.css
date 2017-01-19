@@ -15,6 +15,8 @@
     margin-top: 0.188em; }
 
 .slicknav_menu {
+  background-color: #000000!important;
+  padding: 0px!important;
   *zoom: 1; }
   .slicknav_menu .slicknav_menutxt {
     display: block;
@@ -24,7 +26,18 @@
     float: left;
     width: 1.125em;
     height: 0.875em;
-    margin: 0.188em 0 0 0.438em; }
+    margin: 0.188em 0 0 0.438em;  
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
     .slicknav_menu .slicknav_icon:before {
       background: transparent;
       width: 1.125em;
@@ -49,8 +62,7 @@
     display: table; }
   .slicknav_menu:after {
     content: " ";
-    display: table;
-    clear: both; }
+    display: table; }
 
 .slicknav_nav {
   clear: both; }
@@ -90,15 +102,22 @@
     background-color: #fff; }
 
 .slicknav_btn {
-  margin: 5px 5px 6px;
+  margin: 0px;
+  padding: 25px;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #222; }
+  background-color: #000000; }
 
 .slicknav_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem!important;
+  height: 100vh;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -122,14 +141,15 @@
   .slicknav_nav a {
     padding: 5px 10px;
     margin: 2px 5px;
+    font-size: 5vmin;
     text-decoration: none;
     color: #fff; }
     .slicknav_nav a:hover {
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
-      background: #ccc;
-      color: #222; }
+      background: #000000;
+      color: #DF4859; }
   .slicknav_nav .slicknav_txtnode {
     margin-left: 15px; }
   .slicknav_nav .slicknav_item a {

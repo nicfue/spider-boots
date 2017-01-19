@@ -28,9 +28,9 @@
 	}
 	h3{font-size: 1.2em;
 	}
-	h4{font-size: 1em;
+	h4{font-size: 1.1em;
 	}
-	h5{font-size: 1.1em;
+	h5{font-size: 1em;
 	}
 	h6{font-size: 1.4em;
 	}
@@ -38,15 +38,19 @@
 
 
 @media only screen and (min-width: 768px) {
+	body{
+		font-size: 1rem;
+	}
+
 	h1{font-size: 2.8em;
     }
     h2{ font-size: 1.9em;
 	}
-    h3{font-size: 1.2em;
+    h3{font-size: 1.5em;
     }
     h4{font-size: 1.2em;
 	}
-	h5{font-size: 1.2em;
+	h5{font-size: 1.1em;
 	}	
     h6{font-size: 1.8em;
     }
@@ -98,19 +102,21 @@
 @media only screen and (min-width: 992px) {
 	h1{font-size: 3em;
     }
-    h2{font-size: 2.1em;
+    h2{font-size: 2.2em;
 	}
-	h3{ font-size: 1.4em;
+	h3{ font-size: 1.7em;
 	}
-	h4{ font-size: 1.2em;
+	h4{ font-size: 1.3em;
 	}
-
+	h5{ font-size: 1.2em;
+	}
 	h6{font-size: 2em;}
 
+	
 	.display-4{font-size: 6rem;}
 
   	.wrapper-p {
-		width: 70%;
+		width: 75%;
 		margin: auto;
 	}
 
@@ -133,4 +139,8 @@
 		#menu {
   	display: block;
 	}
+
 }
+
+
+
