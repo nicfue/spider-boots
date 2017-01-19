@@ -1,6 +1,11 @@
+@import 'animations';
+
+
 body {
   overflow-x: hidden;
+  font-size: 0.9rem;
 }
+
 
 .jumbotron-fluid {
   width: 100vw;
@@ -13,13 +18,12 @@ body {
 .navbar {
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   background: transparent;
+  padding-right: 25px !important;
   border-radius: 0;
-  height: 4rem;
-  transition: background 0.5s linear;
     .nav-link {
-    	color: white;
+      color: white;
     &:hover {
       color: rgba(223, 72, 89, 0.5);
       transition: color 0.2s linear;
@@ -27,11 +31,33 @@ body {
   }
 }
 
+nav a {
+  font-size: 24px;
+  padding: 12px 6px 12px 6px;
+  -webkit-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+}
+
+.nav-item .active {
+  color: rgba(223, 72, 89, 0.5);
+}
+
 .navbar-toggler {
   &:focus {
     outline: none;
   }
 }
+
+nav.navbar.shrink {
+  padding: 5px;
+  transition: all 0.5s linear;
+}
+
+
+nav.shrink a {
+  font-size: 18px;
+}
+
 
 .nav {
   padding-top: 0.3rem;
@@ -43,18 +69,11 @@ body {
 }
 
 .brand-img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  transition-duration: 0.5s;
+  width: 115%;
+  transition: all 0.5s ease;
 }
 
-.brand-img-fixed {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  transition-duration: 0.5s;
-  top: -10%;
-  left: 0%;
-}
+
 
 .navbar-brand {
   position: absolute;
@@ -75,15 +94,15 @@ body {
 }
 
 .staff {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	.rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .rounded-circle {
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-	}
+  }
 }
 
 .parallax {
@@ -94,56 +113,64 @@ body {
 }
 
 .bgimg-1 {
-    min-height: 300px;
-    background-image: url(../pics/pinklady.jpg);
+    min-height: 320px;
+    background-image: url(../pics/blackspider.jpg);
 }
 
 .bgimg-1fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady-fix.jpg);
+  background-image: url(../pics/blackspider-fix.jpg);
 }
 
 .bgimg-2 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady2.jpg)
+  min-height: 320px;
+  background-image: url(../pics/blackspider2.jpg)
 }
 
 .bgimg-2fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady2-fix.jpg);
+  background-image: url(../pics/blackspider2-fix.jpg);
 }
 
 .bgimg-3 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady3.jpg)
+  min-height: 320px;
+  background-image: url(../pics/blackspider3.jpg)
 }
 
 .bgimg-3fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady3-fix.jpg);
+  background-image: url(../pics/blackspider3-fix.jpg);
 }
 
 .scrollToTop{
-	color: #e48e98;
-	position: fixed;
+  color: #e48e98;
+  position: fixed;
   left: 88vw;
-	bottom: 15vw;
-	display:none;
+  bottom: 15vw;
+  display:none;
 }
 
 .bgc-red {
 background-color: #df4859;
 }
 
-h4 {
-  line-height: 2rem;
+p{
+  font-weight: 600;
 }
+
+a {text-decoration: none; color: white;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
 
 .header-text{
   position:absolute;
@@ -151,6 +178,8 @@ h4 {
   margin: auto;
   width:100%;
 }
+
+.display-4{font-size: 3rem;}
 
 .footer-text{
   font-size: 0.6rem;
@@ -204,27 +233,22 @@ h4 {
   }
 }
 
-.font-bold {
-  font-weight: bold;
-}
-
 .about-border-box:nth-child(3n+2) .service-icon:hover {
- border: 10px solid #DF4859;
+ border: 5px solid #DF4859;
 }
 .about-border-box:nth-child(3n+3) .service-icon:hover{
-  border: 10px solid #E48E98;
+  border: 5px solid #E48E98;
 }
 .about-border-box:nth-child(3n+1) .service-icon:hover {
-  border: 10px solid #EFF0D1;
+  border: 5px solid #EFF0D1;
 }
 
 .service-icon {
-  height: 190px;
-  width: 190px;
-  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border-radius: 30%;
   border: 10px solid #ececec;
   position: relative;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -270,14 +294,14 @@ h4 {
   transform: rotate(135deg);
 }
 
-.slicknav_icon.open span:nth-child(2) { 
+.slicknav_icon.open span:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
 
 .slicknav_icon.open span:nth-child(3) {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   top: 4px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
