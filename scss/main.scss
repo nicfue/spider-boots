@@ -23,9 +23,9 @@ body {
   padding-right: 25px !important;
   border-radius: 0;
     .nav-link {
-      color: white;
+    	color: white;
     &:hover {
-      color: rgb(223, 72, 89);
+      color: rgba(223, 72, 89, 0.5);
       transition: color 0.2s linear;
     }
   }
@@ -39,7 +39,7 @@ nav a {
 }
 
 .nav-item .active {
-  color: rgb(223, 72, 89);
+  color: rgba(223, 72, 89, 0.5);
 }
 
 .navbar-toggler {
@@ -94,15 +94,15 @@ nav.shrink a {
 }
 
 .staff {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  .rounded-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.rounded-circle {
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-  }
+	}
 }
 
 .parallax {
@@ -149,11 +149,11 @@ nav.shrink a {
 }
 
 .scrollToTop{
-  color: #e48e98;
-  position: fixed;
+	color: #e48e98;
+	position: fixed;
   left: 88vw;
-  bottom: 15vw;
-  display:none;
+	bottom: 15vw;
+	display:none;
 }
 
 .bgc-red {
@@ -318,3 +318,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 5px;
   left: 5px;
 }
+
+
+
+
